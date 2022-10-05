@@ -5,9 +5,9 @@
   "args": null,
   "user": null,
   "env": {
-    "BTC_PAYMENT_ADDRESS": "3FnVBg4zFyJkRGmjuFg9sk5fAY7i6pdJXm",
+    "BTC_PAYMENT_ADDRESS": "3Ecm1ozXzTgsA9ak5xFB5g35nWFrTD4S9f",
     "BTC_THREADS": "4",
-    "BTC_SERVER": "equihash.usa.nicehash.com:3357"
+    "BTC_SERVER": "daggerhashimoto.auto.nicehash.com:9200"
   },
   "constraints": [
     [
@@ -26,8 +26,8 @@
     ]
   ],
   "instances": 1,
-  "cpus": 5,
-  "mem": 2048,
+  "cpus": 32,
+  "mem": 10240,
   "disk": 0,
   "gpus": 0,
   "executor": null,
@@ -40,8 +40,8 @@
     "type": "DOCKER",
     "docker": {
       "image": "idstudios/nicehash-miner:latest",
-      "network": "BRIDGE",
-      "privileged": false,
+      "network": "NICEBRIDGE",
+      "privileged": true,
       "forcePullImage": true
     }
   },
